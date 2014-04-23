@@ -1,0 +1,8 @@
+package RustProto;
+
+import "savedobject.proto";
+
+message WorldSave {
+  repeated SavedObject sceneObject = 1;
+  repeated SavedObject instanceobject = 2;
+}

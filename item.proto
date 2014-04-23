@@ -1,0 +1,12 @@
+package RustProto;
+
+message Item {
+  optional int32 id = 1;
+  optional string name = 2;
+  optional int32 slot = 3;
+  optional int32 count = 4;
+  repeated Item subitem = 5;
+  optional int32 subslots = 6;
+  optional float condition = 7;
+  optional float maxcondition = 8;
+}

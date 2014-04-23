@@ -1,0 +1,74 @@
+package RustProto;
+
+import "vector.proto";
+import "quaternion.proto";
+import "vitals.proto";
+
+message objectCoords {
+  optional Vector pos = 1;
+  optional Vector oldPos = 2;
+  optional Quaternion rot = 3;
+  optional Quaternion oldRot = 4;
+}
+
+message objectDeployable {
+  optional uint64 CreatorID = 1;
+  optional uint64 OwnerID = 2;
+}
+
+message objectDoor {
+  optional int32 State = 1;
+  optional bool Open = 2;
+}
+
+message objectFireBarrel {
+  optional bool OnFire = 1;
+}
+
+message objectICarriableTrans {
+  optional int32 transCarrierID = 1;
+}
+
+message objectLockable {
+  optional string password = 1;
+  optional bool locked = 2;
+  repeated uint64 users = 3;
+}
+
+message objectNetInstance {
+  optional int32 serverPrefab = 1;
+  optional int32 ownerPrefab = 2;
+  optional int32 proxyPrefab = 3;
+  optional int32 groupID = 4;
+}
+
+message objectNGCInstance {
+  optional int32 ID = 1;
+  optional bytes data = 2;
+}
+
+message objectSleepingAvatar {
+  optional int32 footArmor = 1;
+  optional int32 legArmor = 2;
+  optional int32 torsoArmor = 3;
+  optional int32 headArmor = 4;
+  optional int32 timestamp = 5;
+  optional Vitals vitals = 6;
+}
+
+message objectStructComponent {
+  optional int32 ID = 1;
+  optional int32 MasterID = 2;
+  optional int32 MasterViewID = 3;
+}
+
+message objectStructMaster {
+  optional int32 ID = 1;
+  optional float DecayDelay = 2;
+  optional uint64 CreatorID = 3;
+  optional uint64 OwnerID = 4;
+}
+
+message objectTakeDamage {
+  optional float health = 1;
+}

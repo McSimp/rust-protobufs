@@ -1,0 +1,7 @@
+package RustProto;
+
+message Vector {
+  optional float x = 1;
+  optional float y = 2;
+  optional float z = 3;
+}

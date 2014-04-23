@@ -1,0 +1,14 @@
+package RustProto;
+
+message Vitals {
+  optional float health = 1;
+  optional float hydration = 2;
+  optional float calories = 3;
+  optional float radiation = 4;
+  optional float radiation_anti = 5;
+  optional float bleed_speed = 6;
+  optional float bleed_max = 7;
+  optional float heal_speed = 8;
+  optional float heal_max = 9;
+  optional float temperature = 10;
+}

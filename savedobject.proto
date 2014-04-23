@@ -1,0 +1,22 @@
+package RustProto;
+
+import "item.proto";
+import "object.proto";
+
+message SavedObject {
+  optional int32 id = 1;
+  optional objectDoor door = 2;
+  repeated Item inventory = 3;
+  optional objectDeployable deployable = 4;
+  optional objectStructMaster structMaster = 5;
+  optional objectStructComponent structComponent = 6;
+  optional objectFireBarrel fireBarrel = 7;
+  optional objectNetInstance netInstance = 8;
+  optional objectCoords coords = 9;
+  optional objectNGCInstance ngcInstance = 10;
+  optional objectICarriableTrans carriableTrans = 11;
+  optional objectTakeDamage takeDamage = 12;
+  optional int32 sortOrder = 13;
+  optional objectSleepingAvatar sleepingAvatar = 14;
+  optional objectLockable lockable = 15;
+}
