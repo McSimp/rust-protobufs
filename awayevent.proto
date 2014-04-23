@@ -1,0 +1,13 @@
+package RustProto;
+
+message AwayEvent {
+  enum AwayEventType {
+    UNKNOWN = 0;
+    SLUMBER = 1;
+    DIED = 2;
+  }
+
+  optional AwayEventType type = 1; // TODO: Default?
+  optional int32 timestamp = 2;
+  optional uint64 instigator = 3;
+}

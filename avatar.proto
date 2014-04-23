@@ -1,0 +1,19 @@
+package RustProto;
+
+import "vector.proto";
+import "quaternion.proto";
+import "vitals.proto";
+import "blueprint.proto";
+import "item.proto";
+import "awayevent.proto";
+
+message Avatar {
+  optional Vector pos = 1;
+  optional Quaternion ang = 2;
+  optional Vitals vitals = 3;
+  repeated Blueprint blueprints = 4;
+  repeated Item inventory = 5;
+  repeated Item wearable = 6;
+  repeated Item belt = 7;
+  optional AwayEvent awayEvent = 8;
+}

@@ -7,10 +7,11 @@ Compiling
 ---------
 
 ````
-$ protoc --cpp_out=. item.proto object.proto quaternion.proto savedobject.proto vector.proto vitals.proto worldsave.proto
+$ protoc --cpp_out=. avatar.proto awayevent.proto blueprint.proto item.proto object.proto quaternion.proto savedobject.proto vector.proto vitals.proto worldsave.proto
 ````
 
 Usage
 -----
 
-worldsave.proto can be used to read/write world saves (*.sav files).
+* worldsave.proto: world saves (*.sav files)
+* avatar.proto: avatar files (avatar.bin)
